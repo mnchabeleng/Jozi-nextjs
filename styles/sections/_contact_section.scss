@@ -1,0 +1,12 @@
+#contact-form {
+    .form-control {
+        background-color: #f3f3f3;
+    }
+
+    .form-control:active, .form-control:focus {
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: #f3f3f3;
+    }
+}

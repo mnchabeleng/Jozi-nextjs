@@ -1,0 +1,30 @@
+#top-navbar, #top-secondary-navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: #252a33;
+
+    .navbar-toggler {
+        padding: 0.75rem;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        border-width: 0;
+
+        &:focus,
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+        font-family: 'Pacifico', cursive;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #top-navbar {
+        background-color: transparent;
+    }
+}

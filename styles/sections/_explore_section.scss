@@ -1,0 +1,5 @@
+#explore-section {
+    #explore-card {
+        @include grow_transition();
+    }
+}

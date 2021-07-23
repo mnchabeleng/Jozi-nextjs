@@ -1,0 +1,146 @@
+section.master-header {
+    position: relative;
+    min-height: 100vh;
+    background: rgb(233,169,63);
+    background: linear-gradient(0deg, $primaryOrange 0%, $primaryOrange 43%, $primaryBlue 100%);
+
+    h1 {
+        text-align: center;
+        color: $primaryYellow;
+        font-size: 10rem;
+        margin-bottom: -10rem;
+        line-height: 30rem;
+    }
+
+    p {
+        color: $primaryYellow;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .scroll {
+        color: $primaryLightGray;
+        font-size: 1.5rem;
+        position: absolute;
+        bottom: .5rem;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+
+        a {
+            display: block;
+            color: $primaryLightGray;
+            transition: transform .25s;
+            width: 3rem;
+            margin: 0 auto;
+
+            &:hover {
+                transform: translateY(.5rem);
+            }
+        }
+    }
+
+    .birds {
+        position: absolute;
+        left: 45%;
+        bottom: 5rem;
+        z-index: 99;
+    }
+
+    .skyline {
+        position: absolute;
+        bottom: -6px;
+    }
+}
+
+section.page-header, section.explore-header {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 2000px rgba($color: $primaryDarkGray, $alpha: .65);
+    
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+section.explore-header {
+    form#search-form {
+        background-color: rgba($color: $white, $alpha: .3);
+    }
+}
+
+section.page-section {
+    padding-top: 4rem;
+
+    .section-heading {
+        position: relative;
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 4px;
+            background-color: #000000;
+            border-radius: 2px;
+            top: -5px;
+            left: 3px;
+        }
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    section.master-header {
+        h1 {
+            font-size: 20rem;
+            line-height: 35rem;
+        }
+
+        p {
+            color: $primaryLightGray;
+            font-size: 1.5rem;
+            position: absolute;
+            bottom: 3rem;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .birds {
+            position: absolute;
+            left: 45%;
+            bottom: 10rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    section.master-header {
+        h1 {
+            font-size: 25rem;
+            line-height: 30rem;
+        }
+
+        p {
+            color: $primaryLightGray;
+            font-size: 1.5rem;
+            position: absolute;
+            bottom: 3rem;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .birds {
+            position: absolute;
+            left: 45%;
+            top: 25%;
+        }
+    }
+}

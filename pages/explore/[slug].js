@@ -14,42 +14,69 @@ const Listing = ({ listing }) => {
                         <div className="col-sm-8">
                             <h1 className="listing-title">{ listing.title }</h1>
                             <p className="listing-description">{ listing.description }</p>
-                            <Images images={ listing.images } />
                             <div className="listing-details">
                                 <div className="row">
-                                    <div className="col-sm-4 mb-3">
-                                        <i className="fas fa-address-book"></i>
-                                        <h5>Address</h5>
-                                        { listing.address }
+                                    <div className="col-sm-4 mb-3" id="detail">
+                                        <div className="icon">
+                                            <i className="fas fa-address-book"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h5>Address</h5>
+                                            { listing.address }
+                                        </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3">
-                                        <i className="fas fa-phone-alt"></i>
-                                        <h5>Phone</h5>
-                                        { listing.phone }
+                                    <div className="col-sm-4 mb-3" id="detail">
+                                        <div className="icon">
+                                            <i className="fas fa-phone-alt"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h5>Phone</h5>
+                                            { listing.phone }
+                                        </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3">
-                                        <i className="fas fa-laptop"></i>
-                                        <h5>Website</h5>
-                                        { listing.website }
+                                    <div className="col-sm-4 mb-3" id="detail">
+                                        <div className="icon">
+                                            <i className="fas fa-laptop"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h5>Website</h5>
+                                            { listing.website }
+                                        </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3">
-                                        <i className="far fa-clock"></i>
-                                        <h5>Time</h5>
+                                    <div className="col-sm-4 mb-3" id="detail">
+                                        <div className="icon">
+                                            <i className="far fa-clock"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h5>Time</h5>
+                                        </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3">
-                                        <i className="fas fa-star"></i>
-                                        <h5>Rating</h5>
-                                        { listing.rating } / 5
+                                    <div className="col-sm-4 mb-3" id="detail">
+                                        <div className="icon">
+                                            <i className="fas fa-star"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h5>Rating</h5>
+                                            { listing.rating } / 5
+                                        </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3">
-                                        <i className="fas fa-map-marker-alt"></i>
-                                        <h5>Location</h5>
-                                        { listing.location.name }
+                                    <div className="col-sm-4 mb-3" id="detail">
+                                        <div className="icon">
+                                            <i className="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h5>Location</h5>
+                                            { listing.location.name }
+                                        </div>
                                     </div>
-                                    <div className="col-sm-4">
-                                        <i className="fas fa-user"></i>
-                                        <h5>Listed By</h5>
-                                        { listing.user.name }
+                                    <div className="col-sm-4" id="detail">
+                                        <div className="icon">
+                                            <i className="fas fa-user"></i>
+                                        </div>
+                                        <div className="content">
+                                            <h5>Listed By</h5>
+                                            { listing.user.name }
+                                        </div>
                                     </div>
                                 </div>
                             </div>

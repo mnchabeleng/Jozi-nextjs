@@ -120,16 +120,27 @@
 
     .listing-details {
         margin: 3rem 0;
+        
+        #detail {
+            align-items: flex-start;
+            display: flex;
 
-        i {
-            background-color: $primaryOrange;
-            height: 3rem;
-            width: 3rem;
-            text-align: center;
-            line-height: 3rem;
-            border-radius: 0.2rem;
-            float: left;
-            margin-right: 1rem;
+            .icon {
+                i {
+                    background-color: $primaryOrange;
+                    height: 3rem;
+                    width: 3rem;
+                    text-align: center;
+                    line-height: 3rem;
+                    border-radius: 0.2rem;
+                    float: left;
+                }
+            }
+            
+            .content {
+                flex: 1;
+                padding-left: 0.6rem;
+            }
         }
     }
 

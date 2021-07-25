@@ -3,7 +3,7 @@ import MainLayout from '../layouts/MainLayout'
 import HeaderSection from '../partials/home/HeaderSection'
 import ExploreSection from '../partials/home/ExploreSection'
 import AboutSection from '../partials/about/AboutSection'
-import SubscribeSection from '../partials/SubscribeSection'
+import SubscribeSection from '../partials/subscribe/SubscribeSection'
 
 const Home = ({ categories }) => {
   return (

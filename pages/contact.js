@@ -2,7 +2,7 @@ import API_URL from '../config'
 import { useState } from 'react'
 import MainLayout from '../layouts/MainLayout'
 import PageHeader from '../partials/PageHeader'
-import SubscribeSection from '../partials/SubscribeSection'
+import SubscribeSection from '../partials/subscribe/SubscribeSection'
 import Alert from '../partials/Alert'
 
 const Contact = () => {

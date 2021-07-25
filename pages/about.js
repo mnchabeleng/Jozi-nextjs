@@ -1,7 +1,7 @@
 import MainLayout from '../layouts/MainLayout'
 import PageHeader from '../partials/PageHeader'
 import AboutSection from '../partials/about/AboutSection'
-import SubscribeSection from '../partials/SubscribeSection'
+import SubscribeSection from '../partials/subscribe/SubscribeSection'
 
 
 const About = () => {

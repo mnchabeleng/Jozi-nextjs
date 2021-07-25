@@ -50,6 +50,8 @@ const Listing = ({ listing }) => {
                                         <div className="content">
                                             <h5>Time</h5>
                                             { listing.time.open + ' - ' + listing.time.close }
+                                            <br />
+                                            <span className={ `text-${ listing.time.status == 'OPEN' ? 'success' : 'danger' }` }>{ listing.time.status }</span>
                                         </div>
                                     </div>
                                     <div className="col-6 col-sm-4 mb-3" id="detail">

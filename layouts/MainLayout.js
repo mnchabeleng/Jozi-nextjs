@@ -1,6 +1,6 @@
 import Meta from '../partials/Meta'
-import PrimaryNavbar from '../partials/PrimaryNavbar'
-import SecondaryNavbar from '../partials/SecondaryNavbar'
+import PrimaryNavbar from '../partials/navbar/PrimaryNavbar'
+import SecondaryNavbar from '../partials/navbar/SecondaryNavbar'
 import Footer from '../partials/Footer'
 
 const MainLayout = ({ children, title, primaryNavbar }) => {

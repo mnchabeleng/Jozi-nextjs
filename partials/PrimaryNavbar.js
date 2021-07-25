@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import Menu from './Menu'
 
-const PrimaryNavbar = () => {
+const PrimaryNavbar = ({ title }) => {
     useEffect(() => {
         window.addEventListener('scroll', event => {
             const scrollValue = window.scrollY
@@ -16,7 +16,7 @@ const PrimaryNavbar = () => {
     }, [])
     return (
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="top-navbar">
-            <Menu />
+            <Menu title={ title } />
         </nav>
     )
 }

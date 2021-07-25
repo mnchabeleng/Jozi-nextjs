@@ -14,6 +14,15 @@ const ListingItem = ({ listing }) => {
         
     }
 
+    const timeStyle = (time) => {
+        const todayDate = new Date()
+        const currentTime = todayDate.getHours() + ":" + todayDate.getMinutes()
+        if(currentTime < time.open && currentTime > time.close)
+            return true
+        else
+            return false
+    }
+
     return (
         <div className="col-12 col-sm-12 col-md-4 mb-4 d-grid">
             <Link href={ `/explore/${ listing.slug }` }>
@@ -35,7 +44,7 @@ const ListingItem = ({ listing }) => {
                             <li><i className="fas fa-laptop"></i>{ listing.website }</li>
                         </ul>
                     </div>
-                    <div className="status bg-success">OPEN</div>
+                    <div className={ `status bg-${ timeStyle(listing.time) ? 'success' : 'danger' }` }>{ timeStyle(listing.time) ? 'OPEN' : 'CLOSED' }</div>
                     <div className={ `rating-star bg-${ ratingStyle(listing.rating) }` }></div>
                     <div className="rating">{ listing.rating }</div>
                 </div>

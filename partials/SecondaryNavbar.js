@@ -1,9 +1,9 @@
 import Menu from './Menu'
 
-const SecondaryNavbar = () => {
+const SecondaryNavbar = ({ title }) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="top-secondary-navbar">
-            <Menu />
+            <Menu title={ title } />
         </nav>
     )
 }

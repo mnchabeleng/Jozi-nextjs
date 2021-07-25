@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
-const Menu = () => {
+const Menu = ({ title }) => {
+    console.log(title)
     return (
         <div className="container-fluid">
             <Link href="/">
@@ -13,22 +14,22 @@ const Menu = () => {
                 <ul className="navbar-nav ms-auto py-4 py-lg-0">
                     <li className="nav-item">
                         <Link href="/">
-                            <a className="nav-link">Home</a>
+                            <a className={ `nav-link ${ title == 'Jozi' && 'active' }` }>Home</a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/explore">
-                            <a className="nav-link">Explore</a>
+                            <a className={ `nav-link ${ title == 'Explore' && 'active' }` }>Explore</a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/about">
-                            <a className="nav-link">About</a>
+                            <a className={ `nav-link ${ title == 'About' && 'active' }` }>About</a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/contact">
-                            <a className="nav-link">Contact</a>
+                            <a className={ `nav-link ${ title == 'Contact' && 'active' }` }>Contact</a>
                         </Link>
                     </li>
                 </ul>

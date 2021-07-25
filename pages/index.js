@@ -7,7 +7,7 @@ import SubscribeSection from '../partials/SubscribeSection'
 
 const Home = ({ categories }) => {
   return (
-    <MainLayout>
+    <MainLayout title="Jozi">
       <HeaderSection />
       <ExploreSection categories={ categories } />
       <AboutSection />

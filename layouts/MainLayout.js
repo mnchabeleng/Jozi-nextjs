@@ -7,7 +7,7 @@ const MainLayout = ({ children, title, primaryNavbar }) => {
     return (
         <>
             <Meta title={ title } />
-            { primaryNavbar ? <PrimaryNavbar /> : <SecondaryNavbar /> }
+            { primaryNavbar ? <PrimaryNavbar title={ title } /> : <SecondaryNavbar title={ title } /> }
             { children }
             <Footer />
         </>

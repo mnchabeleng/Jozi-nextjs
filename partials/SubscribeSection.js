@@ -53,7 +53,7 @@ const SubscribeSection = () => {
                                 <div className="small text-white">
                                 {
                                     validations.email ? validations.email :
-                                    'We care about privacy, and will never share your data.'
+                                    'We care about privacy, and won\'t share your email.'
                                 }
                                 </div>
                             </form>

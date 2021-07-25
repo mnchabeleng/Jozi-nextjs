@@ -8,7 +8,7 @@ export default (req, res) => {
 
     validations.email = validate.email(email, {
         required: 'Email is required.', 
-        invalid: `${ email } is not a valid email address.`
+        invalid: `"${ email }" is not a valid email address.`
     })
 
     if(validations.email){

@@ -16,7 +16,7 @@ const Listing = ({ listing }) => {
                             <p className="listing-description">{ listing.description }</p>
                             <div className="listing-details">
                                 <div className="row">
-                                    <div className="col-sm-4 mb-3" id="detail">
+                                    <div className="col-6 col-sm-4 mb-3" id="detail">
                                         <div className="icon">
                                             <i className="fas fa-address-book"></i>
                                         </div>
@@ -25,7 +25,7 @@ const Listing = ({ listing }) => {
                                             { listing.address }
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3" id="detail">
+                                    <div className="col-6 col-sm-4 mb-3" id="detail">
                                         <div className="icon">
                                             <i className="fas fa-phone-alt"></i>
                                         </div>
@@ -34,7 +34,7 @@ const Listing = ({ listing }) => {
                                             { listing.phone }
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3" id="detail">
+                                    <div className="col-6 col-sm-4 mb-3" id="detail">
                                         <div className="icon">
                                             <i className="fas fa-laptop"></i>
                                         </div>
@@ -43,15 +43,16 @@ const Listing = ({ listing }) => {
                                             { listing.website }
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3" id="detail">
+                                    <div className="col-6 col-sm-4 mb-3" id="detail">
                                         <div className="icon">
                                             <i className="far fa-clock"></i>
                                         </div>
                                         <div className="content">
                                             <h5>Time</h5>
+                                            { listing.time.open + ' - ' + listing.time.close }
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3" id="detail">
+                                    <div className="col-6 col-sm-4 mb-3" id="detail">
                                         <div className="icon">
                                             <i className="fas fa-star"></i>
                                         </div>
@@ -60,7 +61,7 @@ const Listing = ({ listing }) => {
                                             { listing.rating } / 5
                                         </div>
                                     </div>
-                                    <div className="col-sm-4 mb-3" id="detail">
+                                    <div className="col-6 col-sm-4 mb-3" id="detail">
                                         <div className="icon">
                                             <i className="fas fa-map-marker-alt"></i>
                                         </div>
@@ -69,7 +70,7 @@ const Listing = ({ listing }) => {
                                             { listing.location.name }
                                         </div>
                                     </div>
-                                    <div className="col-sm-4" id="detail">
+                                    <div className="col-6 col-sm-4" id="detail">
                                         <div className="icon">
                                             <i className="fas fa-user"></i>
                                         </div>

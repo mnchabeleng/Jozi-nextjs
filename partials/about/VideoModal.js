@@ -9,7 +9,7 @@ const VideoModal = ({ setVideoModal }) => {
 
     return (
         <div className="modal" style={ modalStyle } onClick={ () => setVideoModal(false) }>
-            <div className="modal-dialog modal-lg modal-dialog-centered">
+            <div className="modal-dialog modal-xl modal-dialog-centered">
                 <div className="modal-content">
                     <div className="modal-body" style={{ padding: '0' }}>
                         <VideoEmbed />

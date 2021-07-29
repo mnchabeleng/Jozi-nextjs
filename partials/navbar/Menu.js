@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 const Menu = ({ title }) => {
-    console.log(title)
     return (
         <div className="container-fluid">
             <Link href="/">
